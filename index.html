@@ -164,18 +164,16 @@
     📱
   </a>
   <script>
-  <const header = document.getElementById('dynamic-header');
-
-  document.addEventListener('mousemove', (e) => {
-    const x = e.clientX / window.innerWidth;
-    const y = e.clientY / window.innerHeight;
-
-    // ألوان متدرجة ديناميكية حسب حركة المؤشر
-    const color1 = hsl(${x * 360}, 100%, 70%);
-    const color2 = hsl(${y * 360}, 100%, 60%);
-
-    header.style.background = linear-gradient(to right, ${color1}, ${color2});
-  });>
-</script>
+    const header = document.getElementById('dynamic-header');
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      const hue1 = Math.floor(x * 360);
+      const hue2 = Math.floor(y * 360);
+      const color1 = `hsl(${hue1}, 100%, 65%)`;
+      const color2 = `hsl(${hue2}, 100%, 50%)`;
+      header.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+    });
+  </script>
 </body>
 </html>
