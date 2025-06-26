@@ -128,11 +128,11 @@
 </head>
 
 <body>
-  <header>
-    <h1>التسويق الرقمي مع <span class="highlight">YoGo</span></h1>
-    <p>خدمات احترافية في التسويق الرقمي والتصميم</p>
-    <a href="https://web.facebook.com/profile.php?id=61577901775895" class="btn">تواصل معنا عبرFACEBOOK</a>
-  </header>
+  <header id="dynamic-header">
+  <h1>التسويق الرقمي مع <span class="highlight">YoGo</span></h1>
+  <p>خدمات احترافية في التسويق الرقمي والتصميم</p>
+  <a href="https://web.facebook.com/profile.php?id=61577901775895" class="btn">تواصل معنا عبرfacebook</a>
+</header>
 
   <section class="services">
     <h2>خدماتنا</h2>
@@ -163,5 +163,19 @@
   <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" title="راسلنا على واتساب">
     📱
   </a>
+  <script>
+  const header = document.getElementById('dynamic-header');
+
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+
+    // ألوان متدرجة ديناميكية حسب حركة المؤشر
+    const color1 = hsl(${x * 360}, 100%, 70%);
+    const color2 = hsl(${y * 360}, 100%, 60%);
+
+    header.style.background = linear-gradient(to right, ${color1}, ${color2});
+  });
+</script>
 </body>
 </html>
