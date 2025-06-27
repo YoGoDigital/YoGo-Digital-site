@@ -6,6 +6,9 @@
   <meta name="google-site-verification" content="google09b08f3b30a8f358">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>التسويق الرقمي مع YoGo</title>
+   <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   <style>
     body {
       font-family: 'Tahoma', sans-serif;
@@ -17,10 +20,10 @@
     }
 
     header {
+      background: linear-gradient(to right, #00c9ff, #92fe9d);
       color: white;
       text-align: center;
       padding: 60px 20px;
-      transition: background 0.3s ease;
     }
 
     header .highlight {
@@ -95,6 +98,40 @@
       background-color: #1ebe5d;
     }
 
+    /* Swiper styles */
+    .swiper {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.8;
+    }
+
     @media (max-width: 768px) {
       header {
         padding: 40px 15px;
@@ -115,6 +152,10 @@
         height: 50px;
         font-size: 24px;
       }
+
+      .swiper {
+        height: 250px;
+      }
     }
   </style>
 </head>
@@ -124,6 +165,17 @@
     <p>خدمات احترافية في التسويق الرقمي والتصميم</p>
   <a href="https://web.facebook.com/profile.php?id=61577901775895" class="btn">تواصل معنا عبرfacebook</a>
   </header>
+   <!-- Slider Section -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400/1abc9c/ffffff?text=تصميم+1" alt="صورة 1"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400/3498db/ffffff?text=تصميم+2" alt="صورة 2"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400/e74c3c/ffffff?text=تصميم+3" alt="صورة 3"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
   <section class="services">
     <h2>خدماتنا</h2>
@@ -162,6 +214,25 @@
       const color1 = `hsl(${hue1}, 100%, 65%)`;
       const color2 = `hsl(${hue2}, 100%, 50%)`;
       header.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+    });
+  </script>
+  <!-- SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
 </body>
