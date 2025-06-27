@@ -6,8 +6,6 @@
   <meta name="google-site-verification" content="google09b08f3b30a8f358">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>التسويق الرقمي مع YoGo</title>
-
-  <!-- CSS داخلي -->
   <style>
     body {
       font-family: 'Tahoma', sans-serif;
@@ -19,10 +17,10 @@
     }
 
     header {
-      background: linear-gradient(to right, #00c9ff, #92fe9d);
       color: white;
       text-align: center;
       padding: 60px 20px;
+      transition: background 0.3s ease;
     }
 
     header .highlight {
@@ -45,9 +43,10 @@
       padding: 40px 20px;
       text-align: center;
       background-color: #ffffff;
-      margin: 20px;
+      margin: 20px auto;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
     }
 
     .services ul {
@@ -66,34 +65,6 @@
       padding: 15px;
     }
 
-    .contact form {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: right;
-    }
-
-    .contact input, .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-    }
-
-    .contact button {
-      background-color: #00c9ff;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .contact button:hover {
-      background-color: #009fd4;
-    }
-
     .social-buttons {
       margin-top: 20px;
     }
@@ -102,7 +73,6 @@
       text-decoration: none;
     }
 
-    /* زر واتساب */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -124,15 +94,36 @@
     .whatsapp-float:hover {
       background-color: #1ebe5d;
     }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 40px 15px;
+      }
+
+      .btn {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .services, .contact {
+        padding: 20px 10px;
+      }
+
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
-
 <body>
   <header id="dynamic-header">
-  <h1>التسويق الرقمي مع <span class="highlight">YoGo</span></h1>
-  <p>خدمات احترافية في التسويق الرقمي والتصميم</p>
+    <h1>التسويق الرقمي مع <span class="highlight">YoGo</span></h1>
+    <p>خدمات احترافية في التسويق الرقمي والتصميم</p>
   <a href="https://web.facebook.com/profile.php?id=61577901775895" class="btn">تواصل معنا عبرfacebook</a>
-</header>
+  </header>
 
   <section class="services">
     <h2>خدماتنا</h2>
@@ -146,12 +137,10 @@
 
   <section id="contact" class="contact">
     <h2>تواصل معنا</h2>
-    <form>
-<center><a href="https://forms.gle/WSTtWTicLGznxfnSA" target="_blank" class="btn" style="background:#673ab7; color:white;">افتح نموذج التواصل</a></center>
-    </form>
-
+    <p>أرسل لنا عبر النموذج التالي:</p>
+    <center><a href="https://forms.gle/WSTtWTicLGznxfnSA" target="_blank" class="btn" style="background:#673ab7; color:white;">افتح نموذج التواصل</a></center>
     <div class="social-buttons">
-      <a href="https://www.instagram.com/yogo_digital/" target="_blank" class="btn" style="background:#E1306C; color:white;">📷 تابعنا على إنستغرام</a>
+  <a href="https://www.instagram.com/yogo_digital/" target="_blank" class="btn" style="background:#E1306C; color:white;">📷 تابعنا على إنستغرام</a>
     </div>
   </section>
 
@@ -159,10 +148,10 @@
     <p>© 2025 التسويق الرقمي مع YoGo</p>
   </footer>
 
-  <!-- زر واتساب -->
-  <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" title="راسلنا على واتساب">
+    <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" title="راسلنا على واتساب">
     📱
   </a>
+
   <script>
     const header = document.getElementById('dynamic-header');
     document.addEventListener('mousemove', (e) => {
