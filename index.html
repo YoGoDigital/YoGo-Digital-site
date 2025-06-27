@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-head>
-  <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="google-site-verification" content="google09b08f3b30a8f358.html"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="google09b08f3b30a8f358.html" />
-
-  <title>التسويق الرقمي مع YoGo | تصميم إعلانات و إدارة سوشيال ميديا</title>
-
-  <!-- Meta SEO -->
-  <meta name="description" content="YoGo Digital تقدم خدمات احترافية في التسويق الرقمي، تصميم منشورات، إدارة حملات ممولة، وتحليل الأداء على السوشيال ميديا.">
-  <meta name="keywords" content="YoGo Digital, التسويق الرقمي, تصميم سوشيال ميديا, إدارة حملات ممولة, تصميم بوستات, تسويق فيسبوك, حملات إعلانية">
-  <meta name="author" content="YoGo Digital">
-  <link rel="canonical" href="https://yogodigital.github.io/YoGo-Digital-site/" />
-
-  <!-- Open Graph (Facebook) -->
-  <meta property="og:title" content="التسويق الرقمي مع YoGo" />
-  <meta property="og:description" content="خدمات تسويق رقمي وتصميم احترافي مع YoGo Digital." />
-  <meta property="og:image" content="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true" />
-  <meta property="og:url" content="https://yogodigital.github.io/YoGo-Digital-site/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ar_AR" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="التسويق الرقمي مع YoGo">
-  <meta name="twitter:description" content="خدمات تصميم وتسويق رقمي احترافي مع YoGo Digital.">
-  <meta name="twitter:image" content="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true">
-
-  <!-- SwiperJS CSS -->
+  <title>التسويق الرقمي مع YoGo</title>
+   <!-- SwiperJS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-  <!-- Your existing styles remain -->
-  <style>
- 
+<style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+      direction: rtl;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c9ff, #92fe9d);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header .highlight {
+      color: #fff000;
+      font-weight: bold;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px 5px;
+    }
+
+    .services, .contact {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #ffffff;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .social-buttons {
+      margin-top: 20px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+
+    /* Slider styles */
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      border-top: 4px solid #00c9ff;
+      border-bottom: 4px solid #00c9ff;
+      margin-top: 30px;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(300px * 6);
+      animation: scroll 30s linear infinite;
+    }
+
+    .slider-track img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 600px) {
+      .slider-track img {
+        width: 200px;
+        height: 140px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -74,11 +167,13 @@ head>
   </section>
 
   <footer>
-  <p>© 2025 YoGo Digital - جميع الحقوق محفوظة</p>
-</footer>
+    <p>© 2025 التسويق الرقمي مع YoGo</p>
+  </footer>
+
     <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" title="راسلنا على واتساب">
     📱
   </a>
+
   <!--script>
     const header = document.getElementById('dynamic-header');
     document.addEventListener('mousemove', (e) => {
@@ -91,5 +186,6 @@ head>
       header.style.background = linear-gradient(to right, ${color1}, ${color2});
     });
   </script-->
+ 
 </body>
 </html>
