@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yogodigital.github.io/YoGo-Digital-site/sitemap.xml
