@@ -192,4 +192,73 @@
   <section id="contact" class="contact">
     <h2>تواصل معنا</h2>
     <p>أرسل لنا عبر النموذج التالي:</p>
-    <center><a href="https://forms.gle/W
+    <center><a href="https://forms.gle/WSTtWTicLGznxfnSA" target="_blank" class="btn" style="background:#673ab7; color:white;">افتح نموذج التواصل</a></center>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/yogo_digital/" target="_blank" class="btn" style="background:#E1306C; color:white;">📷 تابعنا على إنستغرام</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 التسويق الرقمي مع YoGo</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" aria-label="راسلنا عبر واتساب">📱</a>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      effect: "fade",
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      fadeEffect: {
+        crossFade: true,
+      },
+    });
+
+    // تحريك الخلفية حسب الماوس
+    const header = document.getElementById('dynamic-header');
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      const hue1 = Math.floor(x * 360);
+      const hue2 = Math.floor(y * 360);
+      const color1 = `hsl(${hue1}, 100%, 65%)`;
+      const color2 = `hsl(${hue2}, 100%, 50%)`;
+      header.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+    });
+  </script>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "YoGo Digital",
+    "image": "https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true",
+    "url": "https://yogo.com",
+    "telephone": "+962788352386",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "JO"
+    },
+    "sameAs": [
+      "https://www.instagram.com/yogo_digital/",
+      "https://web.facebook.com/profile.php?id=61577901775895"
+    ]
+  }
+  </script>
+
+</body>
+</html>
