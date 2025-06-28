@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="خدمات تسويق رقمي احترافية مع YoGo. تصميم، إدارة، إعلانات ممولة، وتحليل الأداء.">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="خدمات احترافية في التسويق الرقمي والتصميم مع YoGo. إدارة صفحات سوشيال ميديا، تصميم منشورات، حملات إعلانية وتحليل الأداء.">
   <meta name="google-site-verification" content="google09b08f3b30a8f358.html"/>
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="التسويق الرقمي مع YoGo">
-  <meta property="og:description" content="خدمات احترافية في التسويق الرقمي والتصميم.">
-  <meta property="og:image" content="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true">
-  <meta property="og:url" content="https://رابط-موقعك.com">
-  <meta name="twitter:card" content="summary_large_image">
 
-  <title>التسويق الرقمي مع YoGo</title>
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="التسويق الرقمي مع YoGo - تصميم وحملات إعلانية">
+  <meta property="og:description" content="خدمات تصميم وإعلانات ممولة وتحليل أداء على السوشيال ميديا مع YoGo.">
+  <meta property="og:image" content="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true">
+  <meta property="og:url" content="https://yogo.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="التسويق الرقمي مع YoGo">
+  <meta name="twitter:description" content="احصل على أفضل خدمات التسويق الرقمي والتصميم مع YoGo.">
+  <meta name="twitter:image" content="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yogo.com"/>
+
+  <title>التسويق الرقمي مع YoGo - تصميم وحملات سوشيال ميديا</title>
 
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -104,33 +114,46 @@
       background-color: #1ebe5d;
     }
 
-    /* Swiper styles */
-    .swiper {
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 40px;
-      background: #fff;
+    /* Swiper الاحترافي */
+    .slider-section {
+      max-width: 100%;
+      margin-top: 40px;
       border-top: 4px solid #00c9ff;
       border-bottom: 4px solid #00c9ff;
-      margin-top: 30px;
+      background-color: #fff;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
     }
 
     .swiper-slide img {
       width: 100%;
-      max-width: 400px;
       height: auto;
-      object-fit: cover;
+      max-height: 500px;
+      object-fit: contain;
       border-radius: 15px;
-      margin: 0 auto;
     }
 
-    @media (max-width: 600px) {
-      .swiper-slide img {
-        max-width: 250px;
-      }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #00c9ff;
+    }
+
+    .swiper-pagination-bullet {
+      background: #00c9ff;
     }
   </style>
 </head>
+
 <body>
 
   <header id="dynamic-header">
@@ -139,20 +162,22 @@
     <a href="https://web.facebook.com/profile.php?id=61577901775895" class="btn">تواصل معنا عبر Facebook</a>
   </header>
 
-  <!-- Swiper Slider -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/WhatsApp%20Image%202025-06-26%20at%2003.14.25_d2af0a0b.jpg?raw=true" alt="logobrand"></div>
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true" alt="websitedesign"></div>
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/Untitled-2.png?raw=true" alt="postersocialmedia"></div>
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/flyer%20design.png?raw=true" alt="flyerdesign"></div>
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/polly%20art.png?raw=true" alt="pollyart"></div>
-      <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/new%20poster-01.jpg?raw=true" alt="posterai"></div>
+  <!-- سلايدر احترافي -->
+  <section class="slider-section">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/WhatsApp%20Image%202025-06-26%20at%2003.14.25_d2af0a0b.jpg?raw=true" alt="شعار YoGo"></div>
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/websitebackground.png?raw=true" alt="تصميم موقع"></div>
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/Untitled-2.png?raw=true" alt="سوشيال ميديا"></div>
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/flyer%20design.png?raw=true" alt="فلاير"></div>
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/polly%20art.png?raw=true" alt="فن رقمي"></div>
+        <div class="swiper-slide"><img src="https://github.com/YoGoDigital/YoGo-Digital-site/blob/main/images/new%20poster-01.jpg?raw=true" alt="بوستر AI"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+  </section>
 
   <section class="services">
     <h2>خدماتنا</h2>
@@ -167,46 +192,4 @@
   <section id="contact" class="contact">
     <h2>تواصل معنا</h2>
     <p>أرسل لنا عبر النموذج التالي:</p>
-    <center><a href="https://forms.gle/WSTtWTicLGznxfnSA" target="_blank" class="btn" style="background:#673ab7; color:white;">افتح نموذج التواصل</a></center>
-    <div class="social-buttons">
-      <a href="https://www.instagram.com/yogo_digital/" target="_blank" class="btn" style="background:#E1306C; color:white;">📷 تابعنا على إنستغرام</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 التسويق الرقمي مع YoGo</p>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/962788352386" target="_blank" aria-label="راسلنا عبر واتساب">
-    📱
-  </a>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-    // تفاعل الهيدر مع حركة الماوس
-    const header = document.getElementById('dynamic-header');
-    document.addEventListener('mousemove', (e) => {
-      const x = e.clientX / window.innerWidth;
-      const y = e.clientY / window.innerHeight;
-      const hue1 = Math.floor(x * 360);
-      const hue2 = Math.floor(y * 360);
-      const color1 = `hsl(${hue1}, 100%, 65%)`;
-      const color2 = `hsl(${hue2}, 100%, 50%)`;
-      header.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-    });
-  </script>
-</body>
-</html>
+    <center><a href="https://forms.gle/W
