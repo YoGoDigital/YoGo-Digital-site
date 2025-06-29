@@ -1,107 +1,133 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8"/>
   <meta name="google-site-verification" content="google09b08f3b30a8f358.html"/>
   <title>موقع YoGo - التسويق الرقمي</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>من نحن | YoGo Digital</title>
-  <meta name="description" content="تعرف على YoGo Digital وخدماتنا في التسويق الرقمي وسياسة الخصوصية.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع YoGo لخدمات التسويق الرقمي والتصميم، إدارة حملات وإعلانات وإبداع بصري.">
+  <meta name="google-site-verification" content="google09b08f3b30a8f358.html" />
+
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
-      color: #333;
+      font-family: Tahoma, sans-serif;
+      background: #f9f9f9;
       direction: rtl;
+      text-align: center;
     }
 
     header {
       background: linear-gradient(to right, #00c9ff, #92fe9d);
+      padding: 50px 20px;
       color: white;
-      text-align: center;
-      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      border-top: 4px solid #00c9ff;
+      border-bottom: 4px solid #00c9ff;
+      margin: 40px 0;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(300px * 6);
+      animation: scroll 20s linear infinite;
+    }
+
+    .slider-track img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 600px) {
+      .slider-track img {
+        width: 200px;
+        height: 140px;
+      }
     }
 
     section {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
+      background-color: white;
+      margin: 30px auto;
+      padding: 20px;
       border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: #00bcd4;
-      margin-top: 30px;
-    }
-
-    ul {
-      padding-right: 20px;
     }
 
     footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
+      background: #333;
+      color: #fff;
       padding: 15px;
+      font-size: 14px;
     }
 
-    a.home-btn {
+    .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #00bcd4;
+      margin-top: 15px;
+      background-color: #00c9ff;
       color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
       text-decoration: none;
-      border-radius: 25px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>من نحن</h1>
-    <p>نحن YoGo Digital، شغفنا هو نجاح علامتك التجارية.</p>
+    <h1>التسويق الرقمي مع YoGo</h1>
+    <p>نساعدك على النمو والانتشار!</p>
   </header>
 
+  <!-- السلايدر البسيط -->
+  <div class="slider-container">
+    <div class="slider-track">
+      <img src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=تصميم+1" alt="تصميم 1">
+      <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=إعلان+2" alt="إعلان 2">
+      <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=تحليل+3" alt="تحليل 3">
+      <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=خدمة+4" alt="خدمة 4">
+      <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=إبداع+5" alt="إبداع 5">
+      <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=تسويق+6" alt="تسويق 6">
+    </div>
+  </div>
+
   <section>
-    <h2>نبذة عن YoGo Digital</h2>
-    <p>
-      YoGo Digital هي وكالة تسويق رقمي وتصميم إبداعي تأسست في الأردن لتقديم حلول مبتكرة تساعد العلامات التجارية على الظهور بقوة في الفضاء الرقمي. نمتلك خبرة في تصميم البوستات، إدارة الإعلانات، وتحليل الأداء.
-    </p>
-
     <h2>خدماتنا</h2>
-    <ul>
-      <li>تصميم منشورات احترافية للسوشيال ميديا</li>
-      <li>إدارة صفحات فيسبوك وإنستغرام</li>
-      <li>إطلاق حملات إعلانية ممولة وتحسينها</li>
-      <li>تحليل الأداء باستخدام أدوات رقمية متقدمة</li>
-      <li>بناء الهوية البصرية لعلامتك التجارية</li>
+    <ul style="list-style: none; padding: 0;">
+      <li>🎯 تصميم منشورات احترافية</li>
+      <li>📱 إدارة حسابات سوشيال ميديا</li>
+      <li>💰 حملات إعلانية ممولة</li>
+      <li>📊 تحليل أداء المحتوى</li>
     </ul>
-
-    <h2>رؤيتنا</h2>
-    <p>
-      أن نكون وكالة رائدة في تقديم حلول رقمية مبتكرة وعصرية تخدم روّاد الأعمال في الأردن والعالم العربي.
-    </p>
-
-    <h2>سياسة الخصوصية</h2>
-    <p>
-      نحن نحترم خصوصيتك، ولا نقوم بجمع أي معلومات شخصية دون إذنك. أي بيانات يتم مشاركتها معنا (مثل الاسم أو البريد أو الرقم) تُستخدم فقط للتواصل في نطاق الخدمات، ولا يتم بيعها أو نشرها لأي جهة ثالثة.
-    </p>
-    <p>
-      عند استخدامك نماذج التواصل أو حساباتنا الاجتماعية، فأنت توافق ضمنيًا على هذه السياسة.
-    </p>
-
-    <a href="index.html" class="home-btn">العودة إلى الصفحة الرئيسية</a>
+    <a href="https://instagram.com/yogo.marketing" target="_blank" class="btn">تابعنا على إنستغرام</a>
   </section>
 
   <footer>
-    <p>© 2025 YoGo Digital - جميع الحقوق محفوظة</p>
+    © 2025 YoGo - جميع الحقوق محفوظة
   </footer>
 
 </body>
