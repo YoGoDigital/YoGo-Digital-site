@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="google-site-verification" content="google09b08f3b30a8f358.html"/>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="YoGo Digital - خدمات تسويق إلكتروني وتصميم احترافية تساعدك على نمو أعمالك." />
   <meta name="keywords" content="YoGo Digital, تسويق رقمي, تصميم, سوشال ميديا, تسويق الكتروني, إعلانات ممولة" />
   <meta name="author" content="YoGo Digital" />
@@ -20,3 +18,130 @@
     }
     header {
       background: linear-gradient(90deg, #ff6b6b, #f8c23a);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #fff3e0;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ff6b6b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .services, .testimonials {
+      background-color: #fff8e1;
+    }
+    .service-item, .testimonial {
+      max-width: 300px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact {
+      background-color: #fce4ec;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    @media (min-width: 768px) {
+      .grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>YoGo Digital</h1>
+    <p>نقود أعمالك نحو النجاح الرقمي</p>
+  </header>
+
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#testimonials">العملاء</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>نحن في YoGo Digital نؤمن بأن التسويق الرقمي هو الطريق الأسرع للوصول إلى جمهورك. نقدم حلولًا مبتكرة في التصميم، الإعلانات، وإدارة المحتوى.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>خدماتنا</h2>
+    <div class="grid">
+      <div class="service-item">
+        <h3>تصميم سوشال ميديا</h3>
+        <p>تصاميم عصرية وجذابة تناسب علامتك التجارية.</p>
+      </div>
+      <div class="service-item">
+        <h3>إعلانات ممولة</h3>
+        <p>إدارة حملات فعالة على فيسبوك وإنستغرام بجودة عالية.</p>
+      </div>
+      <div class="service-item">
+        <h3>تحسين الظهور (SEO)</h3>
+        <p>نساعدك على التميز في نتائج البحث وزيادة الزيارات.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>آراء العملاء</h2>
+    <div class="grid">
+      <div class="testimonial">
+        <p>"تعامل رائع وخدمة ممتازة، فريق YoGo ساعدنا نطور حضورنا الرقمي!"</p>
+        <strong>- أحمد من عمّان</strong>
+      </div>
+      <div class="testimonial">
+        <p>"أفضل وكالة تعاملت معها، نتائج ملموسة وتواصل سريع."</p>
+        <strong>- سارة من الزرقاء</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>تواصل معنا</h2>
+    <p>راسلنا عبر الإيميل أو وسائل التواصل:</p>
+    <p><strong>Email:</strong> info@yogodigital.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YoGo Digital - جميع الحقوق محفوظة</p>
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">📸</a>
+      <a href="#">📘</a>
+    </div>
+  </footer>
+
+</body>
+</html>
